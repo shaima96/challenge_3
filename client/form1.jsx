@@ -9,13 +9,12 @@ class Form1 extends React.Component {
             email: "",
             password: ""
         };
-    };
-
+    }
 
 
     render() {
         return (
-            <form id="form1">
+            <form id="form1" action="/form1" method="POST">
                 <label for="name">name:</label><br></br>
                 <input type="text" id="name" name="name" /><br></br><br></br>
                 <label for="email">email:</label><br></br>

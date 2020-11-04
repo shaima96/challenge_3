@@ -17,7 +17,7 @@ class Form2 extends React.Component {
 
     render() {
         return (
-            <form id="form1">
+            <form id="form2" action="/form2"  method="POST">
                 <label for="line1">line 1:</label><br></br>
                 <input type="text" id="line1" name="line1" /><br></br>
                 <label for="line2">line 2:</label><br></br>

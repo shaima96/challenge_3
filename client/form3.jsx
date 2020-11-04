@@ -14,7 +14,7 @@ class Form3 extends React.Component {
 
     render() {
         return (
-            <form id="form1">
+            <form id="form3" action="/form3" method="POST">
                 <label for="name">credit card Number:</label><br></br>
                 <input type="text" id="credit" name="credit" /><br></br><br></br>
                 <label for="expiry date">expiry date:</label><br></br>
