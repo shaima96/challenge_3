@@ -1,7 +1,6 @@
 
 
 const express = require('express');
-
 const app = express();
 
 app.use(express.urlencoded({ extended: true }))
@@ -10,8 +9,8 @@ app.use(express.json())
 
  
 let port = 4000;
-app.get("/",(req,res)=>{
-    res.sendFile(__dirname + '/./compiled/client/app.js')
+app.get("/app",(req,res)=>{
+    res.sendFile(__dirname + '/./compiled/client/app.js');
 })
 
 // app.post('/form1',(req,res)=>{

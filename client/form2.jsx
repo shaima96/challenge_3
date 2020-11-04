@@ -28,7 +28,7 @@ class Form2 extends React.Component {
                 <input type="text" id="state" name="state" /><br></br>
                 <label for="code">code:</label><br></br>
                 <input type="text" id="code" name="code" /><br></br>
-                <input type="submit" value="submit" />
+                <button id="next">Next</button>
             </form>
         )
     }

@@ -19,7 +19,7 @@ class Form3 extends React.Component {
                 <input type="text" id="credit" name="credit" /><br></br><br></br>
                 <label for="expiry date">expiry date:</label><br></br>
                 <input type="date" id="date" name="date" /><br></br><br></br>
-                <input type="submit" value="submit" />
+                <button id="submit">submit</button>
             </form>
         )
     }
