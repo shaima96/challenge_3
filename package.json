@@ -1,0 +1,32 @@
+{
+  "name": "challenge_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel . --out-dir compiled --presets=react --ignore=node_modules,compiled --source-maps inline",
+    "build:watch": "babel . --out-dir compiled --presets=react --ignore=node_modules,compiled --source-maps inline --watch",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaima96/challenge_3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaima96/challenge_3/issues"
+  },
+  "homepage": "https://github.com/shaima96/challenge_3#readme",
+  "dependencies": {
+    "-": "0.0.1",
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-react": "^7.12.5",
+    "express": "^4.17.1",
+    "npm": "^6.14.8",
+    "react": "^17.0.1",
+    "watch": "^1.0.2"
+  }
+}
