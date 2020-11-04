@@ -1,19 +1,18 @@
 
 
 const express = require('express');
-const path = require('path');
 
 const app = express();
 
-app.set('views', `${__dirname}/views`);
-app.set('view engine', 'ejs');
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }))
+app.use(express.static(__dirname + '/./public'))
+app.use(express.json())
 
-
-app.get('/', (req, res) => {
-    res.send(' show html page ');
+ 
+let port = 4000;
+app.get("/",(req,res)=>{
+    res.sendFile(__dirname + '/./client/app.js')
+})
+app.listen(port, () => {
+    console.log(`listening to port 4000`);
 });
-
-
