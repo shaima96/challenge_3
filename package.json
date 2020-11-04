@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel . --out-dir compiled --presets=react --ignore=node_modules,compiled --source-maps inline",
-    "build:watch": "babel . --out-dir compiled --presets=react --ignore=node_modules,compiled --source-maps inline --watch",
+    "build": "babel .  --out-dir compiled --presets @babel/preset-react --source-maps inline",
+    "build:watch": "babel .  --out-dir compiled --presets @babel/preset-react --source-maps inline --watch",
     "start": "nodemon server.js"
   },
   "repository": {
@@ -23,7 +23,9 @@
     "-": "0.0.1",
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
+    "babel-preset-react": "^6.24.1",
     "express": "^4.17.1",
     "mocha": "^8.2.1",
     "npm": "^6.14.8",

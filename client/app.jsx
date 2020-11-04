@@ -5,8 +5,9 @@ class App extends React.Component {
     render() {
         return (
             <div>
-               <h1>sssssssssssssssss</h1> 
-        
+                <h1> Multistep Checkout Experience</h1>
+                <button type="button" id="checkout">Checkout</button>
+
             </div>
         )
     }
